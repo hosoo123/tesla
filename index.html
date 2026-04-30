@@ -3,45 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>tesla</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <main>
-      <div class="header flex">
-        <img
-          src="./image/tesla.png"
-          alt=""
-          class="logo1"
-          style="padding-left: 35px"
-        />
-        <div class="header--title flex">
-          <nav style="gap: 32px; display: flex">
-            <button type="button">Vehicles</button>
-            <button type="button">Energy</button>
-            <button type="button">Charging</button>
-            <button type="button">Discover</button>
-            <button type="button">Shop</button>
-          </nav>
-        </div>
-        <div style="padding-right: 54px">
-          <img
-            src="./image/Vector.png"
-            alt=""
-            style="width: 20px; height: 20px"
-          />
-          <img
-            src="./image/Vector.png"
-            alt=""
-            style="width: 20px; height: 20px"
-          />
-          <img
-            src="./image/Vector.png"
-            alt=""
-            style="width: 20px; height: 20px"
-          />
-        </div>
+    <header class="header flex">
+      <img src="./image/tesla.png" alt="" class="logo1" />
+      <div class="header--title flex">
+        <nav class="button-style">
+          <button type="button" class="button1">Vehicles</button>
+          <button type="button" class="button2">Energy</button>
+          <button type="button" class="button3">Charging</button>
+          <button type="button" class="button4">Discover</button>
+          <button type="button" class="button5">Shop</button>
+        </nav>
       </div>
+      <div class="img__style">
+        <img src="./image/support.png" alt="" class="img1" />
+        <img src="./image/region.png" alt="" class="img1" />
+        <img src="./image/account.png" alt="" class="img1" />
+      </div>
+            <div class="header-panel-expanded"></div>
+    </header>
+    <main>
+
+      <section class="section1 center">
+        <video autoplay muted loop class="video1">
+          <source src="image/video/model-Y.mp4" />
+        </video>
+        <div class="textContent">
+          <h1 class="f--style">Model Y</h1>
+          <p class="f-style">From $31,890*</p>
+          <p class="f-style1">After Federal Tax Credit & Est. Gas Savings</p>
+        </div>
+        <div class="bottom-center">
+          <div class="shop--demo">
+            <button class="shop-button">Shop Available</button>
+            <button class="demo-button">Demo Drive</button>
+          </div>
+          <div class="shop-title">
+            <p>
+              *Price before incentives and savings is $42,990, excluding taxes
+              and fees. Subject to change.
+            </p>
+            <a href="" class="shop-subtitle">Learn about est. gas savings.</a>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
