@@ -7,28 +7,150 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <header class="header flex">
-      <img src="./image/tesla.png" alt="" class="logo1" />
-      <div class="header--title flex">
-        <nav class="button-style">
-          <button type="button" class="button1">Vehicles</button>
-          <button type="button" class="button2">Energy</button>
-          <button type="button" class="button3">Charging</button>
-          <button type="button" class="button4">Discover</button>
-          <button type="button" class="button5">Shop</button>
-        </nav>
-      </div>
-      <div class="img__style">
-        <img src="./image/support.png" alt="" class="img1" />
-        <img src="./image/region.png" alt="" class="img1" />
-        <img src="./image/account.png" alt="" class="img1" />
-      </div>
-            <div class="header-panel-expanded"></div>
-    </header>
     <main>
-
+      <header class="header flex">
+        <img src="./image/tesla.png" alt="" class="logo1" />
+        <div class="header--title flex">
+          <nav class="button-style">
+            <button type="button" class="button1">Vehicles</button>
+            <button type="button" class="button2">Energy</button>
+            <button type="button" class="button3">Charging</button>
+            <button type="button" class="button4">Discover</button>
+            <button type="button" class="button5">Shop</button>
+          </nav>
+        </div>
+        <div class="img__style">
+          <img src="./image/support.png" alt="" class="img1" />
+          <img src="./image/region.png" alt="" class="img1" />
+          <img src="./image/account.png" alt="" class="img1" />
+        </div>
+        <div class="header-panel-expanded">
+          <div class="cars">
+            <div class="card-border1">
+              <div class="cars-img-size">
+                <img src="./image/02.png" alt="" />
+                <p class="car-name">Model S</p>
+                <div class="underline-text">
+                  <div class="underline-text">
+                    <p>Learn</p>
+                    <p>Order</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cars-img-size">
+                <img src="./image/01.png" alt="" />
+                <p class="car-name">Model 3</p>
+                <div class="underline-text">
+                  <p>Learn</p>
+                  <p>Order</p>
+                </div>
+              </div>
+              <div class="cars-img-size">
+                <img src="./image/03.png" alt="" />
+                <p class="car-name">Model X</p>
+                <div class="underline-text">
+                  <p>Learn</p>
+                  <p>Order</p>
+                </div>
+              </div>
+              <div class="cars-img-size">
+                <img src="./image/06.png" alt="" />
+                <p class="car-name">Model Y</p>
+                <div class="underline-text">
+                  <p>Learn</p>
+                  <p>Order</p>
+                </div>
+              </div>
+              <div class="cars-img-size">
+                <img src="./image/05.png" alt="" />
+                <p class="car-name">Cybertruck</p>
+                <div class="underline-text">
+                  <p>Learn</p>
+                  <p>Order</p>
+                </div>
+              </div>
+              <div class="cars-img-size">
+                <img src="./image/04.png" alt="" />
+                <p class="car-name">Help Me Choose</p>
+                <div class="underline-text">
+                  <p>Learn</p>
+                  <p>Order</p>
+                </div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="menu-secondary-links">
+              <a href="" target="_self">Inventory</a>
+              <a href="" target="_self">User Cars</a>
+              <a href="" target="_self">Demo Drive</a>
+              <a href="" target="_self">Trade-in</a>
+              <a href="" target="_self">Compare</a>
+              <a href="" target="_self">Help Me Charge</a>
+              <a href="" target="_self">Fleet</a>
+              <a href="" target="_self">Semi</a>
+              <a href="" target="_self">Roadster</a>
+            </div>
+          </div>
+        </div>
+      </header>
       <section class="section1 center">
-        <video autoplay muted loop class="video1">
+        <video class="video1" autoplay muted loop>
+          <source src="image/video/model-Y.mp4" />
+        </video>
+        <div class="cardContentContainer">
+          <div class="textContent">
+            <h1 class="f--style">Model Y</h1>
+            <p class="f-style">From $31,890*</p>
+            <p class="f-style1">After Federal Tax Credit & Est. Gas Savings</p>
+          </div>
+          <div class="bottom-center">
+            <div class="shop--demo">
+              <button class="shop-button">Shop Available</button>
+              <button class="demo-button">Demo Drive</button>
+            </div>
+            <div class="shop-title">
+              <p>
+                *Price before incentives and savings is $42,990, excluding taxes
+                and fees. Subject to change.
+              </p>
+              <a href="" class="shop-subtitle">Learn about est. gas savings.</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="width: 100%; height: 100vh">
+        <img
+          src="image/01sect.png"
+          alt=""
+          style="position: absolute; width: 100%; height: 100%; z-index: 1"
+        />
+        <div>
+          <div>
+            <p class="f--style" style="z-index: 5">Model Y</p>
+            <div>
+              <p>From $31,890*</p>
+              <p>After Federal Tax Credit & Est. Gas Savings</p>
+            </div>
+          </div>
+          <div>
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 16px;
+              "
+            >
+              <button class="shop-button">Learn more</button>
+              <button class="shop-button">Learn more</button>
+            </div>
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="section1 center">
+        <video class="video1" autoplay muted loop>
           <source src="image/video/model-Y.mp4" />
         </video>
         <div class="textContent">
@@ -49,7 +171,7 @@
             <a href="" class="shop-subtitle">Learn about est. gas savings.</a>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
   </body>
 </html>

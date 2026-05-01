@@ -11,8 +11,6 @@ main {
   width: 100%;
   margin: auto;
 }
-body {
-}
 .center {
   display: flex;
   justify-content: center;
@@ -40,7 +38,6 @@ body {
   padding: 0px 54px 0px 35px;
 }
 .button-style {
-  gap: 32px;
   display: flex;
 }
 .button1:hover {
@@ -74,29 +71,37 @@ body {
 .header--title > nav > button {
   background-color: transparent;
   display: flex;
-  gap: 32px;
   border: 2px solid transparent;
   color: white;
   margin: auto;
   cursor: pointer;
+  width: 84px;
   height: 32px;
+  justify-content: center;
   align-items: center;
   border-radius: 4px;
 }
-/* main */
+/* -----------------------main-------------------------------- */
 .section1 {
-  position: absolute;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
 .video1 {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
 }
 .textContent {
   flex-direction: column;
   text-align: center;
   position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   color: white;
 }
 .f--style {
@@ -105,6 +110,16 @@ body {
   font-size: 40px;
   line-height: 48px;
 }
+
+.cardContentContainer {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .f-style {
   font-weight: 500;
   font-size: 20px;
@@ -120,12 +135,16 @@ body {
 .shop--demo {
   display: flex;
   gap: 24px;
+  width: 100%;
+  justify-content: center;
 }
 .bottom-center {
   position: absolute;
-  bottom: 2%;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 .shop-button {
   background: rgba(244, 244, 244, 0.8);
@@ -163,15 +182,101 @@ body {
   width: 100%;
   height: 487px;
   right: 0;
-  top: 100%;
+  top: -500px;
+  transition: top 0.4s ease-in-out;
   background: rgb(255 255 255);
   backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: -1;
 }
+.img__style {
+  opacity: 0%;
+}
+.cars {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.car-name {
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
+}
+.card-border1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.underline-text {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 6%;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.underline-text > p {
+  color: gray;
+}
+.divider {
+  border: 1px solid rgba(226, 227, 227, 1);
+  width: 0.000015736102795926854px;
+  height: 360px;
+  opacity: 1;
+  border-width: 1px;
+  margin: 0px 63px;
+}
+.menu-secondary-links {
+  width: 300px;
+  height: 360px;
+  left: 1350px;
+  opacity: 1;
+  font-weight: 800;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+}
+.menu-secondary-links > a {
+  text-decoration: none;
+  color: black;
+}
+.header:has(.button-style .button1:hover) .header-panel-expanded {
+  top: 0;
+}
+.header:has(.button-style button:hover) .img__style {
+  opacity: 100%;
+}
+.header:has(.button-style button:hover) {
+  background-color: white !important;
+}
+
+.header:has(.button-style button:hover) .button2,
+.header:has(.button-style button:hover) .button3,
+.header:has(.button-style button:hover) .button4,
+.header:has(.button-style button:hover) .button5,
+.header:has(.button-style button:hover) .button1 {
+  color: black;
+}
+.header:has(.button-style button:hover) .logo1,
+.header:has(.button-style button:hover) .img1 {
+  filter: invert(1);
+  opacity: 100%;
+}
+/* ----------------------------section 2------------------------------- */
 
 @media (max-width: 1024px) {
   .button-style {
     margin: auto;
-    gap: 16px;
+    gap: 0px;
   }
 }
 @media (max-width: 768px) {
@@ -180,10 +285,9 @@ body {
   }
   .button-style {
     margin: auto;
-    gap: 8px;
+    gap: 0px;
   }
   .textContent {
-    top: 20%;
   }
   .f--style {
     font-family: "Montserrat", sans-serif;
