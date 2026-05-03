@@ -93,17 +93,19 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: relative;
+  position: absolute;
 }
 .textContent {
   flex-direction: column;
   text-align: center;
-  position: absolute;
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   color: white;
+  z-index: 1;
+  bottom: 149px;
 }
 .f--style {
   font-family: "Montserrat", sans-serif;
@@ -115,9 +117,9 @@ main {
 .cardContentContainer {
   display: flex;
   height: 100%;
-  position: absolute;
+  /* position: absolute; */
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -140,12 +142,13 @@ main {
   justify-content: center;
 }
 .bottom-center {
-  position: absolute;
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  top: 174px;
 }
 .shop-button {
   background: rgba(244, 244, 244, 0.8);
