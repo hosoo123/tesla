@@ -339,6 +339,9 @@ main {
     gap: 0px;
     padding: 0px 5px 0px 5px;
   }
+  .header--title > nav > button {
+    display: none;
+  }
   .button-style {
     display: none;
   }
