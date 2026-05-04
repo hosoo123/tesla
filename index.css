@@ -312,6 +312,8 @@ main {
     margin: auto;
     gap: 0px;
   }
+    .header--title > nav > button {
+    display: none;
   .textContent {
   }
   .f--style {
@@ -333,11 +335,7 @@ main {
     font-family: "Montserrat", sans-serif;
   }
 }
-@media (min-width: 531px) {
-  .header--title > nav > button {
-    display: none;
-  }
-}
+
 @media (max-width: 390px) {
   .header {
     height: 34px;
