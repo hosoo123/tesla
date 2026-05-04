@@ -312,8 +312,9 @@ main {
     margin: auto;
     gap: 0px;
   }
-    .header--title > nav > button {
+  .header--title > nav > button {
     display: none;
+  }
   .textContent {
   }
   .f--style {
