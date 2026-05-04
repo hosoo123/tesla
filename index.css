@@ -336,6 +336,7 @@ main {
 @media (max-width: 390px) {
   .header {
     height: 34px;
+    gap: 0px;
     padding: 0px 5px 0px 5px;
   }
   .button-style {
